@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "abstracts/_vars.scss",
+        "comps/_about.scss",
+        "comps/_body.scss",
+        "comps/_buttons.scss",
+        "comps/_cocktail.scss",
+        "comps/_cocktails.scss",
+        "comps/_error.scss",
+        "comps/_form.scss",
+        "comps/_nav.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
