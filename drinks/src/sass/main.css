@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap");
+.about-section {
+  width: 85vw;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.about-section p {
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +54,115 @@ a {
 img {
   width: 100%;
   display: block;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+
+.cocktails-center {
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  /* align-items: start; */
+}
+
+@media screen and (min-width: 576px) {
+  .cocktails-center {
+    -ms-grid-columns: (minmax(338.8px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+  }
+}
+
+.btn,
+.btn-white,
+.btn-primary {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #476a2e;
+  border: 2px solid #476a2e;
+  padding: 0.45rem 0.8rem;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  font-size: 0.8rem;
+  background: transparent;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #476a2e;
+  color: #fff;
+}
+
+.btn-white {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-white:hover {
+  background: #fff;
+  color: #476a2e;
+}
+
+.btn-primary {
+  background: #476a2e;
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background: #d4e6a5;
+  color: #476a2e;
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  -webkit-box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.btn-details {
+  padding: 0.25rem 0.4rem;
+}
+
+.btn-details:hover {
+  background: #d4e6a5;
+  border-color: #d4e6a5;
+}
+
+.error-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.error-container {
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .navbar {
